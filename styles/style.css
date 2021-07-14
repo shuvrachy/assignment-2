@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+/****************
+ Common Styles 
+ ***************/
+body{
+    margin: 0px auto;
+    font-family: "Poppins", sans-serif;   
+}
+
+/* Header Section Start */
+header {
+    background-color: #2D25A0;
+    height: 667px;
+
+}
+.banner {
+    display:flex;
+    margin-bottom: 70px;
+    justify-content: center;
+}
+
+.banner-title {
+    margin-left: 156px;
+    width: 485px;
+    margin-top: 100px;
+}
+.banner-title h1 {
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 60px;
+    line-height: 1;
+}
+
+.banner-image img {
+    width: 556px;
+    height: 438px;
+    margin-left: 100px;
+    margin-top: 67px;
+}
+.watch-button {
+    text-decoration: none;
+    background-color: #E02C6D;
+    padding: 8px 30px;
+    color: #FFFFFF;
+    font-weight: 500;
+    display: inline-block;
+    transition: transform 0.3s linear;
+}
+a:hover {
+    transform: scale(1.10);
+}
+/* Header Section End */
+
+/* Main Section Start */
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    margin-top: 40px;
+}
+.container{
+    width: 1090px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 27px;
+}
+.player{
+    width: 330px;
+    height: 474px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding-bottom: 30px;
+}
+.player img{
+    display: block;
+    width: 300px;
+    height: 256px;
+    margin: 14px auto;
+}
+.player-info{
+    padding-left: 14px;
+    padding-right: 14px;
+}
+.player-title{
+    color: #18191F;
+    font-size: 28px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+.player-info p{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 0;
+}    
+/* Main Section Start */
+
+/* Footer Section Start */
+footer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    align-items: center;
+
+}
+
+.football-logo img {
+    width: 480px;
+    height: 110px;
+}
+.social-icon img {
+    width: 32px;
+    height: 32px;
+}
+
+
+/* -----------------
+   Media Queries 
+ -------------------*/
+
+ /* Mobile Devices */
+ @media only screen and (max-width: 767px) {
+    
+   
+    .container{
+        width:100%;
+    }
+    .players {
+        grid-template-columns: repeat(1, auto);
+    }
+
+ }
+ /* Tablet Devices */
+ @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    
+   
+    .container{
+        width:100%;
+    }
+    .players {
+        grid-template-columns: repeat(2, auto);
+    }
+
+ }
+
